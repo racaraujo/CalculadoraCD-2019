@@ -1,0 +1,22 @@
+Quartus II Archive log --	C:/altera/90sp2/calculadora/__Calculadora.auto.qarlog
+
+Archive:	C:/altera/90sp2/calculadora/__Calculadora.auto.qar
+Date:		Wed Jul 24 13:52:25 2019
+Quartus II		9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/altera/90sp2/calculadora/Calculadora.bdf
+C:/altera/90sp2/calculadora/Calculadora.flow.rpt
+C:/altera/90sp2/calculadora/Calculadora.map.rpt
+C:/altera/90sp2/calculadora/Calculadora.map.summary
+C:/altera/90sp2/calculadora/Calculadora.qsf
+C:/altera/90sp2/calculadora/db/Calculadora.cbx.xml
+C:/altera/90sp2/calculadora/db/Calculadora.qpf
+C:/altera/90sp2/calculadora/dividor.bdf
+C:/altera/90sp2/calculadora/divisor.bdf
+C:/altera/90sp2/calculadora/divisor_de_frequencia.bsf
+c:/altera/90sp2/quartus/bin/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
