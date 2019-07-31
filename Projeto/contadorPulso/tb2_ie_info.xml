@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for ALTERA CORPORATION-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<AddressBits>32</AddressBits>
+	<DateInvoked>2019/07/29 15:36:56</DateInvoked>
+	<ElapsedTime>55744</ElapsedTime>
+	<IsInternal>false</IsInternal>
+	<Name>quartus</Name>
+	<PeakMemoryUsed>0</PeakMemoryUsed>
+	<License>
+		<Edition>Web Edition</Edition>
+		<LicenseHostID/>
+	</License>
+	<SchemaVersion>schema_2009-05-26</SchemaVersion>
+	<ProjectRevision>
+		<ProjectName/>
+		<Revision/>
+	</ProjectRevision>
+	<ApplicationError>
+		<ErrorMessage>normal_rect.TopLeft() == rect.TopLeft()</ErrorMessage>
+		<Line>640</Line>
+		<SourceFile>/quartus/gcl/cgl/cgl_glyph.cpp</SourceFile>
+		<StackTrace>
+	0x04601514: GCL_CGL + 0x1514 (?intersect@CGL_GLYPH@@UBI_NABVCRect@@PAVCDC@@@Z + 0x64)
+	0x04604a86: GCL_CGL + 0x4a86 (?retrieve_glyphs@CGL_PLANE@@IAIXPAV?$list@PAVCGL_GLYPH@@V?$MEM_STL_ALLOCATOR@PAVCGL_GLYPH@@@@@_Dinkum_std@@PBVCRect@@PAVCDC@@@Z + 0x96)
+		</StackTrace>
+		<Subsystem>CGL</Subsystem>
+	</ApplicationError>
+	<QuartusInstallation>
+		<InstallationID>167690714066713.15542096160632</InstallationID>
+		<Version>
+			<Build>235</Build>
+			<BuildSite>SJ</BuildSite>
+			<BuildSuffix/>
+			<Edition>Web Edition</Edition>
+			<ServicePack>2</ServicePack>
+			<VersionNumber>9</VersionNumber>
+		</Version>
+	</QuartusInstallation>
+	<Compilation>
+		<CompileID>0</CompileID>
+		<DeviceFamily/>
+		<IncrementalCompilation/>
+		<SOPCBuilderProjectID/>
+		<TopLevelEntityName/>
+	</Compilation>
+	<QuartusUser>
+		<AlteraUserName/>
+		<FAEContactName/>
+		<UserID>167690714066713.155420999116888</UserID>
+		<UserName>Rafael Antônio</UserName>
+		<TalkbackStatus>
+			<DateSet/>
+			<TalkbackOn>true</TalkbackOn>
+		</TalkbackStatus>
+	</QuartusUser>
+	<Machine>
+		<CPUCountLogical>4</CPUCountLogical>
+		<CPUCountPhysical>1</CPUCountPhysical>
+		<CPUSpeed>2712</CPUSpeed>
+		<Hostname>LAPTOP-UUFE9VTD</Hostname>
+		<OS>Windows XP</OS>
+		<OSAddressBits>64</OSAddressBits>
+		<OSVersion>5.1</OSVersion>
+		<Platform>windows</Platform>
+		<ScreenResolution>unknown</ScreenResolution>
+		<TotalPhysicalRAM>1023</TotalPhysicalRAM>
+		<TotalVirtualRAM>1024</TotalVirtualRAM>
+		<NIC>
+			<Address>98838971af19</Address>
+		</NIC>
+		<NIC>
+			<Address>00ff68f848fb</Address>
+		</NIC>
+		<NIC>
+			<Address>9883898b3e23</Address>
+		</NIC>
+		<NIC>
+			<Address>9a83898b3e23</Address>
+		</NIC>
+		<NIC>
+			<Address>aa83898b3e23</Address>
+		</NIC>
+	</Machine>
+</ProgramExecution>
+
