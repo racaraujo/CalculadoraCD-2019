@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 67.100 ns
+From           : inst19
+To             : 32Hz
+From Clock     : clock_FPGA
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock_FPGA'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 200.00 MHz ( period = 5.000 ns )
+From           : inst
+To             : inst
+From Clock     : clock_FPGA
+To Clock       : clock_FPGA
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

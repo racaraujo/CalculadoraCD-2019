@@ -1,0 +1,5 @@
+|divisor_de_frequencia
+32Hz <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+clock_FPGA => inst.CLK
+
+
