@@ -1,0 +1,6 @@
+|contador
+B1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+B2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
