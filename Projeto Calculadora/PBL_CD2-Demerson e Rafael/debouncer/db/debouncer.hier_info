@@ -1,0 +1,74 @@
+|debouncer
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst1.CLK
+clock => inst.CLK
+clock => inst8.CLK
+clock => contadorPulso:inst6.clockFPGA
+push => inst.DATAIN
+
+
+|debouncer|comparadorContadorPulso:inst7
+S <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+BIT1 => inst.IN0
+BIT2 => inst6.IN0
+BIT3 => inst3.IN0
+BIT4 => inst8.IN0
+BIT5 => inst11.IN0
+BIT6 => inst14.IN0
+BIT7 => inst16.IN0
+BIT8 => inst19.IN0
+BIT9 => inst21.IN0
+BIT10 => inst24.IN0
+BIT11 => inst26.IN0
+BIT12 => inst29.IN0
+BIT13 => inst31.IN0
+BIT14 => inst34.IN0
+BIT15 => inst36.IN0
+BIT16 => inst39.IN0
+BIT17 => inst41.IN0
+BIT18 => inst44.IN0
+BIT19 => inst46.IN0
+
+
+|debouncer|contadorPulso:inst6
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst3.ACLR
+Clear => inst4.ACLR
+Clear => inst5.ACLR
+Clear => inst6.ACLR
+Clear => inst7.ACLR
+Clear => inst8.ACLR
+Clear => inst9.ACLR
+Clear => inst10.ACLR
+Clear => inst11.ACLR
+Clear => inst12.ACLR
+Clear => inst13.ACLR
+Clear => inst14.ACLR
+Clear => inst15.ACLR
+Clear => inst16.ACLR
+Clear => inst17.ACLR
+Clear => inst18.ACLR
+Clear => inst19.ACLR
+Clear => inst20.ACLR
+clockFPGA => inst.CLK
+S2 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+S5 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+S6 <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+S7 <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+S8 <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+S9 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+S10 <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+S11 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+S12 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+S13 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+S14 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+S15 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+S16 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+S17 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+S18 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+S19 <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+
+

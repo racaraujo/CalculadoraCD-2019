@@ -1,0 +1,82 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+2
+51
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+comparadorContadorPulso
+# storage
+db|debouncer.(1).cnf
+db|debouncer.(1).cnf
+# case_insensitive
+# source_file
+..|comparadorContadorPulso|comparadorContadorPulso.bdf
+2e7594f9f385cd2bcd1f546d6fa22790
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+comparadorContadorPulso:inst7
+}
+# macro_sequence
+
+# end
+# entity
+contadorPulso
+# storage
+db|debouncer.(2).cnf
+db|debouncer.(2).cnf
+# case_insensitive
+# source_file
+..|contadorPulso|contadorPulso.bdf
+e6129d3f075a09ed6335e16768c492
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+contadorPulso:inst6
+}
+# macro_sequence
+
+# end
+# entity
+debouncer
+# storage
+db|debouncer.(0).cnf
+db|debouncer.(0).cnf
+# case_insensitive
+# source_file
+debouncer.bdf
+d9734897bca16256b80223f742f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
