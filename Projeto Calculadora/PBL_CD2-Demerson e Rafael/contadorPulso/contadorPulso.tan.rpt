@@ -1,0 +1,243 @@
+Classic Timing Analyzer report for contadorPulso
+Tue Aug 06 09:56:35 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'clockFPGA'
+  7. tco
+  8. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                         ;
++------------------------------+-------+---------------+------------------------------------------------+--------+--------+------------+-----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                                    ; From   ; To     ; From Clock ; To Clock  ; Failed Paths ;
++------------------------------+-------+---------------+------------------------------------------------+--------+--------+------------+-----------+--------------+
+; Worst-case tco               ; N/A   ; None          ; 80.000 ns                                      ; inst20 ; S19    ; clockFPGA  ; --        ; 0            ;
+; Clock Setup: 'clockFPGA'     ; N/A   ; None          ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst20 ; inst20 ; clockFPGA  ; clockFPGA ; 0            ;
+; Total number of failed paths ;       ;               ;                                                ;        ;        ;            ;           ; 0            ;
++------------------------------+-------+---------------+------------------------------------------------+--------+--------+------------+-----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP1K100QC208-3     ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clockFPGA       ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clockFPGA'                                                                                                                                                              ;
++-------+------------------------------------------------+--------+--------+------------+-----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From   ; To     ; From Clock ; To Clock  ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+--------+--------+------------+-----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst   ; inst   ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst3  ; inst3  ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst4  ; inst4  ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst5  ; inst5  ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst6  ; inst6  ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst7  ; inst7  ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst8  ; inst8  ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst9  ; inst9  ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst10 ; inst10 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst11 ; inst11 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst12 ; inst12 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst13 ; inst13 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst14 ; inst14 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst15 ; inst15 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst16 ; inst16 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst17 ; inst17 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst18 ; inst18 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst19 ; inst19 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
+; N/A   ; Restricted to 200.00 MHz ( period = 5.000 ns ) ; inst20 ; inst20 ; clockFPGA  ; clockFPGA ; None                        ; None                      ; 1.200 ns                ;
++-------+------------------------------------------------+--------+--------+------------+-----------+-----------------------------+---------------------------+-------------------------+
+
+
++---------------------------------------------------------------+
+; tco                                                           ;
++-------+--------------+------------+--------+-----+------------+
+; Slack ; Required tco ; Actual tco ; From   ; To  ; From Clock ;
++-------+--------------+------------+--------+-----+------------+
+; N/A   ; None         ; 80.000 ns  ; inst20 ; S19 ; clockFPGA  ;
+; N/A   ; None         ; 76.200 ns  ; inst19 ; S18 ; clockFPGA  ;
+; N/A   ; None         ; 72.100 ns  ; inst18 ; S17 ; clockFPGA  ;
+; N/A   ; None         ; 66.900 ns  ; inst17 ; S16 ; clockFPGA  ;
+; N/A   ; None         ; 63.300 ns  ; inst16 ; S15 ; clockFPGA  ;
+; N/A   ; None         ; 58.700 ns  ; inst15 ; S14 ; clockFPGA  ;
+; N/A   ; None         ; 56.700 ns  ; inst14 ; S13 ; clockFPGA  ;
+; N/A   ; None         ; 54.400 ns  ; inst13 ; S12 ; clockFPGA  ;
+; N/A   ; None         ; 50.600 ns  ; inst12 ; S11 ; clockFPGA  ;
+; N/A   ; None         ; 45.900 ns  ; inst11 ; S10 ; clockFPGA  ;
+; N/A   ; None         ; 42.200 ns  ; inst10 ; S9  ; clockFPGA  ;
+; N/A   ; None         ; 39.400 ns  ; inst9  ; S8  ; clockFPGA  ;
+; N/A   ; None         ; 35.800 ns  ; inst8  ; S7  ; clockFPGA  ;
+; N/A   ; None         ; 31.500 ns  ; inst7  ; S6  ; clockFPGA  ;
+; N/A   ; None         ; 27.400 ns  ; inst6  ; S5  ; clockFPGA  ;
+; N/A   ; None         ; 24.200 ns  ; inst5  ; S4  ; clockFPGA  ;
+; N/A   ; None         ; 21.200 ns  ; inst4  ; S3  ; clockFPGA  ;
+; N/A   ; None         ; 19.200 ns  ; inst3  ; S2  ; clockFPGA  ;
+; N/A   ; None         ; 12.600 ns  ; inst   ; S1  ; clockFPGA  ;
++-------+--------------+------------+--------+-----+------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Aug 06 09:56:35 2019
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off contadorPulso -c contadorPulso
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clockFPGA" is an undefined clock
+Warning: Found 18 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "inst19" as buffer
+    Info: Detected ripple clock "inst18" as buffer
+    Info: Detected ripple clock "inst17" as buffer
+    Info: Detected ripple clock "inst16" as buffer
+    Info: Detected ripple clock "inst15" as buffer
+    Info: Detected ripple clock "inst14" as buffer
+    Info: Detected ripple clock "inst13" as buffer
+    Info: Detected ripple clock "inst12" as buffer
+    Info: Detected ripple clock "inst11" as buffer
+    Info: Detected ripple clock "inst10" as buffer
+    Info: Detected ripple clock "inst9" as buffer
+    Info: Detected ripple clock "inst8" as buffer
+    Info: Detected ripple clock "inst7" as buffer
+    Info: Detected ripple clock "inst6" as buffer
+    Info: Detected ripple clock "inst5" as buffer
+    Info: Detected ripple clock "inst4" as buffer
+    Info: Detected ripple clock "inst3" as buffer
+    Info: Detected ripple clock "inst" as buffer
+Info: Clock "clockFPGA" Internal fmax is restricted to 200.0 MHz between source register "inst" and destination register "inst"
+    Info: fmax restricted to Clock High delay (2.5 ns) plus Clock Low delay (2.5 ns) : restricted to 5.0 ns. Expand message to see actual delay path.
+        Info: + Longest register to register delay is 1.200 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC1_L22; Fanout = 3; REG Node = 'inst'
+            Info: 2: + IC(0.200 ns) + CELL(1.000 ns) = 1.200 ns; Loc. = LC1_L22; Fanout = 3; REG Node = 'inst'
+            Info: Total cell delay = 1.000 ns ( 83.33 % )
+            Info: Total interconnect delay = 0.200 ns ( 16.67 % )
+        Info: - Smallest clock skew is 0.000 ns
+            Info: + Shortest clock path from clock "clockFPGA" to destination register is 1.900 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.500 ns) = 0.500 ns; Loc. = PIN_79; Fanout = 1; CLK Node = 'clockFPGA'
+                Info: 2: + IC(1.400 ns) + CELL(0.000 ns) = 1.900 ns; Loc. = LC1_L22; Fanout = 3; REG Node = 'inst'
+                Info: Total cell delay = 0.500 ns ( 26.32 % )
+                Info: Total interconnect delay = 1.400 ns ( 73.68 % )
+            Info: - Longest clock path from clock "clockFPGA" to source register is 1.900 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.500 ns) = 0.500 ns; Loc. = PIN_79; Fanout = 1; CLK Node = 'clockFPGA'
+                Info: 2: + IC(1.400 ns) + CELL(0.000 ns) = 1.900 ns; Loc. = LC1_L22; Fanout = 3; REG Node = 'inst'
+                Info: Total cell delay = 0.500 ns ( 26.32 % )
+                Info: Total interconnect delay = 1.400 ns ( 73.68 % )
+        Info: + Micro clock to output delay of source is 1.100 ns
+        Info: + Micro setup delay of destination is 0.700 ns
+Info: tco from clock "clockFPGA" to destination pin "S19" through register "inst20" is 80.000 ns
+    Info: + Longest clock path from clock "clockFPGA" to source register is 68.700 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.500 ns) = 0.500 ns; Loc. = PIN_79; Fanout = 1; CLK Node = 'clockFPGA'
+        Info: 2: + IC(1.400 ns) + CELL(1.100 ns) = 3.000 ns; Loc. = LC1_L22; Fanout = 3; REG Node = 'inst'
+        Info: 3: + IC(5.500 ns) + CELL(1.100 ns) = 9.600 ns; Loc. = LC8_B20; Fanout = 3; REG Node = 'inst3'
+        Info: 4: + IC(1.200 ns) + CELL(1.100 ns) = 11.900 ns; Loc. = LC6_B11; Fanout = 3; REG Node = 'inst4'
+        Info: 5: + IC(1.900 ns) + CELL(1.100 ns) = 14.900 ns; Loc. = LC1_B13; Fanout = 3; REG Node = 'inst5'
+        Info: 6: + IC(2.000 ns) + CELL(1.100 ns) = 18.000 ns; Loc. = LC8_B19; Fanout = 3; REG Node = 'inst6'
+        Info: 7: + IC(1.900 ns) + CELL(1.100 ns) = 21.000 ns; Loc. = LC4_B8; Fanout = 3; REG Node = 'inst7'
+        Info: 8: + IC(4.400 ns) + CELL(1.100 ns) = 26.500 ns; Loc. = LC8_L12; Fanout = 3; REG Node = 'inst8'
+        Info: 9: + IC(2.000 ns) + CELL(1.100 ns) = 29.600 ns; Loc. = LC8_L16; Fanout = 3; REG Node = 'inst9'
+        Info: 10: + IC(2.200 ns) + CELL(1.100 ns) = 32.900 ns; Loc. = LC8_L48; Fanout = 3; REG Node = 'inst10'
+        Info: 11: + IC(2.600 ns) + CELL(1.100 ns) = 36.600 ns; Loc. = LC4_L7; Fanout = 3; REG Node = 'inst11'
+        Info: 12: + IC(2.300 ns) + CELL(1.100 ns) = 40.000 ns; Loc. = LC3_L22; Fanout = 3; REG Node = 'inst12'
+        Info: 13: + IC(3.800 ns) + CELL(1.100 ns) = 44.900 ns; Loc. = LC1_H29; Fanout = 3; REG Node = 'inst13'
+        Info: 14: + IC(1.400 ns) + CELL(1.100 ns) = 47.400 ns; Loc. = LC2_H52; Fanout = 3; REG Node = 'inst14'
+        Info: 15: + IC(0.200 ns) + CELL(1.100 ns) = 48.700 ns; Loc. = LC1_H52; Fanout = 3; REG Node = 'inst15'
+        Info: 16: + IC(4.000 ns) + CELL(1.100 ns) = 53.800 ns; Loc. = LC6_G28; Fanout = 3; REG Node = 'inst16'
+        Info: 17: + IC(1.900 ns) + CELL(1.100 ns) = 56.800 ns; Loc. = LC2_G13; Fanout = 3; REG Node = 'inst17'
+        Info: 18: + IC(3.900 ns) + CELL(1.100 ns) = 61.800 ns; Loc. = LC4_I29; Fanout = 3; REG Node = 'inst18'
+        Info: 19: + IC(3.900 ns) + CELL(1.100 ns) = 66.800 ns; Loc. = LC5_G13; Fanout = 3; REG Node = 'inst19'
+        Info: 20: + IC(1.900 ns) + CELL(0.000 ns) = 68.700 ns; Loc. = LC4_G2; Fanout = 2; REG Node = 'inst20'
+        Info: Total cell delay = 20.300 ns ( 29.55 % )
+        Info: Total interconnect delay = 48.400 ns ( 70.45 % )
+    Info: + Micro clock to output delay of source is 1.100 ns
+    Info: + Longest register to pin delay is 10.200 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC4_G2; Fanout = 2; REG Node = 'inst20'
+        Info: 2: + IC(1.600 ns) + CELL(8.600 ns) = 10.200 ns; Loc. = PIN_28; Fanout = 0; PIN Node = 'S19'
+        Info: Total cell delay = 8.600 ns ( 84.31 % )
+        Info: Total interconnect delay = 1.600 ns ( 15.69 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 207 megabytes
+    Info: Processing ended: Tue Aug 06 09:56:35 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

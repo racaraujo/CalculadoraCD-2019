@@ -1,0 +1,16 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>CGL</sub_system>
+	<file>/quartus/gcl/cgl/cgl_glyph.cpp</file>
+	<line>640</line>
+	<callstack>
+	0x04601514: GCL_CGL + 0x1514 (?intersect@CGL_GLYPH@@UBI_NABVCRect@@PAVCDC@@@Z + 0x64)
+	0x04604a86: GCL_CGL + 0x4a86 (?retrieve_glyphs@CGL_PLANE@@IAIXPAV?$list@PAVCGL_GLYPH@@V?$MEM_STL_ALLOCATOR@PAVCGL_GLYPH@@@@@_Dinkum_std@@PBVCRect@@PAVCDC@@@Z + 0x96)
+	</callstack>
+	<error>normal_rect.TopLeft() == rect.TopLeft()</error>
+	<date>Tue Jul 30 07:06:00 2019</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>normal_rect.TopLeft() == rect.TopLeft()
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
